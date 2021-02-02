@@ -1,0 +1,68 @@
+.footer {
+  background-color: $background-color-footer;
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  margin-bottom: 9px;
+  color: $main-white-color;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer-connection {
+  margin-bottom: 9px;
+}
+
+.join,
+.subscribe {
+  margin-top: 12px;
+}
+
+.title-inverse {
+  margin-bottom: 20px;
+  color: $background-button-color;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.email-form {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $footer-color;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+
+.send-icon {
+  margin-left: 10px;
+}

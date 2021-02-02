@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  margin-right: 93px;
+
+  color: $title-text-color;
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  &-path {
+    color: $accent-color;
+  }
+  &.logo-inverse {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $main-white-color;
+  }
+}
