@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  &:not(.form-comment) {
+    margin-bottom: 10px;
+  }
 }
 
 .form-title {
@@ -23,25 +26,9 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   transition: border $animation-time $timing-function;
-}
-
-.form-field:focus,
-.comment-field:focus {
-  outline: none;
-  border: 1px solid $accent-color;
-  cursor: pointer;
-}
-
-.form-field:focus + .form-icon {
-  fill: $accent-color;
-  cursor: pointer;
-}
-
-.form-item:not(.form-comment) {
-  margin-bottom: 10px;
 }
 
 .form-subtitle {
@@ -70,6 +57,10 @@
   margin-right: 12px;
   fill: $title-text-color;
   transition: fill $animation-time $timing-function;
+  .form-field:focus + & {
+    fill: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .comment-field {
@@ -133,11 +124,30 @@
   }
 }
 
-.form-button {
-  margin-left: 124px;
-  margin-right: 124px;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.subscribe-form {
+  display: flex;
+}
+
+.email-form {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $footer-color;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+.form-accent:focus {
+  outline: none;
+  border: 1px solid $accent-color;
   cursor: pointer;
 }

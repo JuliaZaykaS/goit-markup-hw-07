@@ -70,7 +70,7 @@ body {
   color: #ffffff;
 }
 
-.list .link {
+.header-connection .connection {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #212121;
@@ -79,7 +79,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.list .link:hover, .list .link:focus, .list .link.current {
+.header-connection .connection:hover, .header-connection .connection:focus {
   color: #2196f3;
 }
 
@@ -97,6 +97,10 @@ body {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+.current:hover, .current:focus {
+  color: #2196f3;
 }
 
 .connection {
@@ -131,9 +135,19 @@ body {
 }
 
 .nav-pages .link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-pages .link:hover, .nav-pages .link:focus, .nav-pages .link.current {
+  color: #2196f3;
 }
 
 .header-connection {
@@ -146,21 +160,18 @@ body {
   margin-left: auto;
 }
 
-.header-connection .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header-connection .item:not(:last-child) {
   margin-right: 50px;
 }
 
 .header-connection .connection {
   color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .email {
@@ -215,6 +226,34 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.form-button {
+  margin-left: 124px;
+  margin-right: 124px;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+
+.send-icon {
+  margin-left: 10px;
 }
 
 .modal-backdrop {
@@ -302,6 +341,10 @@ body {
   position: relative;
 }
 
+.form-item:not(.form-comment) {
+  margin-bottom: 10px;
+}
+
 .form-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -316,25 +359,9 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: var(--title-text-color);
+  color: #212121;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-field:focus,
-.comment-field:focus {
-  outline: none;
-  border: 1px solid #2196f3;
-  cursor: pointer;
-}
-
-.form-field:focus + .form-icon {
-  fill: #2196f3;
-  cursor: pointer;
-}
-
-.form-item:not(.form-comment) {
-  margin-bottom: 10px;
 }
 
 .form-subtitle {
@@ -369,6 +396,11 @@ body {
   fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus + .form-icon {
+  fill: #2196f3;
+  cursor: pointer;
 }
 
 .comment-field {
@@ -461,13 +493,30 @@ body {
   border-color: #2196f3;
 }
 
-.form-button {
-  margin-left: 124px;
-  margin-right: 124px;
-  letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email-form {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+.form-accent:focus {
+  outline: none;
+  border: 1px solid #2196f3;
   cursor: pointer;
 }
 
@@ -613,7 +662,7 @@ body {
           justify-content: center;
 }
 
-.social-link {
+.social-link-team, .company-social-link {
   display: block;
   width: 44px;
   height: 44px;
@@ -621,11 +670,14 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   padding: 12px;
+}
+
+.social-link-team {
   color: #afb1b8;
   background-color: #ffffff;
 }
 
-.social-link:hover, .social-link:focus {
+.social-link-team:hover, .social-link-team:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -634,13 +686,13 @@ body {
   margin-right: 10px;
 }
 
-.company-social-link .social-link {
+.company-social-link {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-social-link .social-link:hover, .company-social-link .social-link:focus {
+.company-social-link:hover, .company-social-link:focus {
   background-color: #2196f3;
 }
 
@@ -719,44 +771,5 @@ body {
 .title-inverse {
   margin-bottom: 20px;
   color: #f5f4fa;
-}
-
-.subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.email-form {
-  width: 358px;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  margin-right: 12px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-}
-
-.subscribe-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-}
-
-.send-icon {
-  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

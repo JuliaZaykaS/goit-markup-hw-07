@@ -1,4 +1,4 @@
-.list .link {
+.header-connection .connection {
   transition: color $animation-time $timing-function;
 
   color: $title-text-color;
@@ -6,8 +6,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   &:hover,
-  &:focus,
-  &.current {
+  &:focus {
     color: $accent-color;
   }
 }
@@ -25,6 +24,10 @@
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 
@@ -45,13 +48,25 @@
 
 .nav-pages {
   display: flex;
+
   & .item:not(:last-child) {
     margin-right: 50px;
   }
   & .link {
+    transition: color $animation-time $timing-function;
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus,
+    &.current {
+      color: $accent-color;
+    }
   }
 }
 
@@ -59,15 +74,14 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  & .link {
-    display: flex;
-    align-items: center;
-  }
+
   & .item:not(:last-child) {
     margin-right: 50px;
   }
   & .connection {
     color: $main-text-color;
+    display: flex;
+    align-items: center;
   }
 }
 
