@@ -6,10 +6,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.portfolio-buttons .pf-button:not(:last-child) {
-  margin-right: 8px;
+  & .pf-button:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .filter-button {

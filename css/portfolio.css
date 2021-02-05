@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-.icon {
-  fill: currentColor;
-}
-
 body {
   color: #757575;
   background-color: #ffffff;
@@ -50,6 +46,66 @@ body {
   text-align: center;
 }
 
+.advantages-title {
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.form-subtitle {
+  margin-bottom: 4px;
+  color: #757575;
+}
+
+.project-title {
+  margin-bottom: 4px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.title-inverse {
+  margin-bottom: 20px;
+  color: #f5f4fa;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.send-icon {
+  margin-left: 10px;
+}
+
+.email {
+  margin-right: 10px;
+}
+
+.telephone {
+  margin-right: 10px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus + .form-icon {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
 .logo {
   display: inline-block;
   margin-right: 93px;
@@ -70,13 +126,33 @@ body {
   color: #ffffff;
 }
 
+.header-connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.header-connection .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-connection .connection {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
+  color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-connection .connection:hover, .header-connection .connection:focus {
@@ -150,38 +226,6 @@ body {
   color: #2196f3;
 }
 
-.header-connection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-}
-
-.header-connection .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-connection .connection {
-  color: #757575;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.email {
-  margin-right: 10px;
-}
-
-.telephone {
-  margin-right: 10px;
-}
-
 .button-primary {
   display: inline-block;
   border: 4px solid transparent;
@@ -195,6 +239,33 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.modal-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover, .modal-button:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .form-button {
@@ -219,10 +290,6 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.06em;
-}
-
-.send-icon {
-  margin-left: 10px;
 }
 
 .portfolio {
@@ -351,15 +418,6 @@ body {
   border-top: none;
 }
 
-.project-title {
-  margin-bottom: 4px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .form {
   width: 528px;
   padding: 40px;
@@ -399,11 +457,6 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-subtitle {
-  margin-bottom: 4px;
-  color: #757575;
-}
-
 .form-item.form-comment {
   margin-bottom: 20px;
 }
@@ -419,23 +472,6 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  margin-right: 12px;
-  fill: #212121;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-field:focus + .form-icon {
-  fill: #2196f3;
-  cursor: pointer;
 }
 
 .comment-field {
@@ -634,10 +670,5 @@ body {
 .join,
 .subscribe {
   margin-top: 12px;
-}
-
-.title-inverse {
-  margin-bottom: 20px;
-  color: #f5f4fa;
 }
 /*# sourceMappingURL=portfolio.css.map */

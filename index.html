@@ -83,7 +83,7 @@
             <div role="group" class="form-item">
               <label class="form-label">
                 <span class="form-subtitle">Имя</span>
-                <input type="text" name="user-name" class="form-field form-accent" autofocus />
+                <input type="text" name="user-name" class="form-field form-accent" autofocus required/>
                 <svg class="form-icon icon">
                   <use
                     href="./images/main/sprite-icons.svg#icon-form-person"
@@ -94,7 +94,7 @@
             <div role="group" class="form-item">
               <label class="form-label"
                 ><span class="form-subtitle">Телефон</span>
-                <input type="tel" name="user-telephone" class="form-field form-accent" />
+                <input type="tel" name="user-telephone" class="form-field form-accent" required />
                 <svg class="form-icon icon">
                   <use
                     href="./images/main/sprite-icons.svg#icon-form-phone"
@@ -105,7 +105,7 @@
             <div role="group" class="form-item">
               <label class="form-label"
                 ><span class="form-subtitle">Почта</span
-                ><input type="email" name="user-mail" class="form-field form-accent" />
+                ><input type="email" name="user-mail" class="form-field form-accent" required />
                 <svg class="form-icon icon">
                   <use
                     href="./images/main/sprite-icons.svg#icon-form-email"
@@ -129,6 +129,7 @@
                   type="checkbox"
                   name="user-agreement"
                   class="agree-checkbox"
+                  required
                 />
                 <span class="checkbox-icon"></span>
                 <span>Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link">Условия договора</a></label
@@ -265,7 +266,7 @@
                 <p lang="en" class="team-specialization">Product Designer</p>
                 <ul class="social-network-list list">
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Инстаграм">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-instagram"
@@ -274,7 +275,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Твиттер">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-twitter"
@@ -283,7 +284,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Фейсбук">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-facebook"
@@ -292,7 +293,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка ЛинкедИн">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-linkedin"
@@ -316,7 +317,7 @@
                 <p lang="en" class="team-specialization">Frontend Developer</p>
                 <ul class="social-network-list list">
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Инстаграм">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-instagram"
@@ -325,7 +326,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Твиттер">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-twitter"
@@ -334,7 +335,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Фейсбук">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-facebook"
@@ -343,7 +344,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка ЛинкедИн">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-linkedin"
@@ -367,7 +368,7 @@
                 <p lang="en" class="team-specialization">Marketing</p>
                 <ul class="social-network-list list">
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Инстаграм">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-instagram"
@@ -376,7 +377,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Твиттер">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-twitter"
@@ -385,7 +386,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Фейсбук">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-facebook"
@@ -394,7 +395,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка ЛинкедИн">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-linkedin"
@@ -418,7 +419,7 @@
                 <p lang="en" class="team-specialization">UI Designer</p>
                 <ul class="social-network-list list">
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Инстаграм">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-instagram"
@@ -427,7 +428,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Твиттер">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-twitter"
@@ -436,7 +437,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка Фейсбук">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-facebook"
@@ -445,7 +446,7 @@
                     </a>
                   </li>
                   <li class="social-network">
-                    <a href="#" class="social-link social-link-team">
+                    <a href="#" class="social-link social-link-team" aria-label="иконка ЛинкедИн">
                       <svg class="icon social-icon" width="20" height="20">
                         <use
                           href="./images/main/sprite-icons.svg#icon-linkedin"
@@ -542,7 +543,7 @@
             <h3 class="advantages-title title-inverse">присоединяйтесь</h3>
             <ul class="list social-network-list">
               <li class="social-network">
-                <a href="#" class="social-link company-social-link">
+                <a href="#" class="social-link company-social-link" aria-label="иконка Инстаграм">
                   <svg class="icon social-icon" width="20" height="20">
                     <use
                       href="./images/main/sprite-icons.svg#icon-instagram"
@@ -551,7 +552,7 @@
                 </a>
               </li>
               <li class="social-network">
-                <a href="#" class="social-link company-social-link">
+                <a href="#" class="social-link company-social-link" aria-label="иконка Твиттер">
                   <svg class="icon social-icon" width="20" height="20">
                     <use
                       href="./images/main/sprite-icons.svg#icon-twitter"
@@ -560,7 +561,7 @@
                 </a>
               </li>
               <li class="social-network ">
-                <a href="#" class="social-link company-social-link">
+                <a href="#" class="social-link company-social-link" aria-label="иконка Фейсбук">
                   <svg class="icon social-icon" width="20" height="20">
                     <use
                       href="./images/main/sprite-icons.svg#icon-facebook"
@@ -569,7 +570,7 @@
                 </a>
               </li>
               <li class="social-network ">
-                <a href="#" class="social-link company-social-link">
+                <a href="#" class="social-link company-social-link" aria-label="иконка ЛинкедИн">
                   <svg class="icon social-icon" width="20" height="20">
                     <use
                       href="./images/main/sprite-icons.svg#icon-linkedin"

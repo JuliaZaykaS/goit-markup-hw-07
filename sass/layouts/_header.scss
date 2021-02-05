@@ -1,13 +1,26 @@
-.header-connection .connection {
-  transition: color $animation-time $timing-function;
+.header-connection {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 
-  color: $title-text-color;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  & .connection {
+    color: $main-text-color;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $animation-time $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
@@ -70,25 +83,4 @@
   }
 }
 
-.header-connection {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
 
-  & .item:not(:last-child) {
-    margin-right: 50px;
-  }
-  & .connection {
-    color: $main-text-color;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.email {
-  margin-right: 10px;
-}
-
-.telephone {
-  margin-right: 10px;
-}

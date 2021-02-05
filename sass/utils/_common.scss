@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.icon {
-  fill: currentColor;
-}
-
 body {
   color: $main-text-color;
   background-color: $main-white-color;
@@ -36,13 +32,4 @@ body {
 
 .link {
   text-decoration: none;
-}
-
-.title {
-  margin-bottom: 50px;
-  color: $title-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
 }

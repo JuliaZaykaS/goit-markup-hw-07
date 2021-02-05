@@ -31,10 +31,6 @@
   transition: border $animation-time $timing-function;
 }
 
-.form-subtitle {
-  margin-bottom: 4px;
-  color: $main-text-color;
-}
 
 .form-item.form-comment {
   margin-bottom: 20px;
@@ -46,21 +42,6 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  margin-right: 12px;
-  fill: $title-text-color;
-  transition: fill $animation-time $timing-function;
-  .form-field:focus + & {
-    fill: $accent-color;
-    cursor: pointer;
-  }
 }
 
 .comment-field {

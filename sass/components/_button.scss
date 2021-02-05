@@ -13,6 +13,28 @@
   line-height: 1.87;
 }
 
+.modal-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: $main-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: fill $animation-time $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
 .form-button {
   margin-left: 124px;
   margin-right: 124px;
@@ -29,8 +51,4 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.06em;
-}
-
-.send-icon {
-  margin-left: 10px;
 }
