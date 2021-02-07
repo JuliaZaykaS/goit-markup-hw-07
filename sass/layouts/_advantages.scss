@@ -1,29 +1,12 @@
 .advantages {
   color: $main-text-color;
   &-catalog {
-  display: flex;
-}
+    display: flex;
+  }
 }
 
 .advantage-item {
-  width: 270px;
   .advantages-catalog &:not(:last-child) {
-  margin-right: 30px;
-}
-}
-
-.advantage-icon-background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-
-  height: 120px;
-  background-color: $background-button-color;
-  border-radius: 4px;
-}
-
-.advantages-text {
-  line-height: 1.71;
-  text-align: left;
+    margin-right: 30px;
+  }
 }
